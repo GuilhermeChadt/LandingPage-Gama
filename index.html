@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Motorola</title>
+    <script>
+        function handleSaveEmail() {
+            const emailValue = document.getElementById('emailField').value;
+            window.localStorage.setItem('emailField', value)
+        };
+
+        function handleGetEmail() {
+            const emailData = localStorage.getItem('emailField');
+            if(emailData){
+                document.getElementById('emailField').value = emailData
+                console.log(emailData)
+            }
+            
+        
+        };
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="MotorolaLogo">
+            <a href="https:/motorola.com.br" target="_blank">
+                <img src="/Images/motorola-logo.png" alt="logo motorola-lenovo branco">
+            </a>
+        </div>
+
+        <div class="BlackFridayCard">
+            <img src="/Images/Gif.gif" alt="Black Friday Mororola">
+        </div>
+    </header>
+
+    <main>
+        <div class="ProductsCards">
+            <a href="https://www.motorola.com.br/smartphone-moto-g30/p" target="_blank">
+                <img src="/Images/motog30.png" alt="MotoG30"></a>
+            <a href="https://empresas.motorola.com.br/" target="_blank">
+                <img src="/Images/SolutionsEnterprises.png">
+            </a>
+        </div>
+
+        <div class="ProductsCards2">
+            <a href="https://www.lenovo.com/br/pt/pc?utm_source=motorolabr" target="_blank">
+                <img src="/Images/lenovodesktop.png" alt="Desktops Lenovo"></a>
+            <a href="" target="_blank">
+                <img src="/Images/motog100.png" alt="MotoG100 Picture">
+            </a>
+        </div>
+
+        <div class="ChargerCard">
+            <a href="https://www.motorola.com.br/acessorios/carregador" target="_blank">
+                <img src="/Images/carregador-parede-desktop.png" alt="Propaganda Carregadores">
+            </a>
+        </div>
+
+        <div class="Register">
+            <h2>Cadastre-se</h2>
+            <input type="email" name="e-mail" id="emailField" value="" placeholder="E-mail" required>
+            <button type="submit" onclick="handleGetEmail()">Cadastre-se</button>
+        </div>
+
+    </main>
+</body>
+
+</html>

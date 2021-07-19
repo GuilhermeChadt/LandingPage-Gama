@@ -1,0 +1,124 @@
+*  {
+     background-color: #000000;
+     margin: 0 auto;
+     padding: 0 auto;
+     text-decoration: none;
+     list-style:  none;
+     font-family: sans-serif;
+     margin: 1vh;
+}
+
+.header{
+     display: flex;
+     justify-content: space-between;
+}
+.MotorolaLogo{
+         animation: opacity 2s ease-in-out infinite;
+         opacity: 1;
+      }
+      
+      @keyframes opacity {
+          0% {
+              opacity: 1;
+          }
+          50% {
+              opacity: 0
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+
+
+
+.ProductsCards{
+     display: flex;
+     justify-content: center;
+}
+
+.ProductsCards img{
+    box-shadow: 5px 4px 10px red;
+}
+
+.ProductsCards img:hover{
+     -webkit-transform: scale(1.3);
+     -ms-transform: scale(1.3);
+     transform: scale(1.2);
+}
+
+.ProductsCards2{
+     margin: 4vh;
+     display: flex;
+     justify-content: center;
+}
+
+.ProductsCards2 img{
+     box-shadow: 5px 4px 10px red;   
+}
+
+.ProductsCards2 img:hover{
+     -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+.ChargerCard{
+     display: flex;
+     margin-left: 0 auto;
+     justify-content: center;
+}
+
+.ChargerCard img{
+     box-shadow: 5px 4px 10px red;
+}
+
+.ChargerCard img:hover{
+     -webkit-transform: scale(0.8);
+     -ms-transform: scale(0.8);
+     transform: scale(0.8);
+}
+
+.Register{
+     border-bottom: 1px solid #FFFFFF;
+     display: grid;
+     text-align: center;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20vh;
+     width: 40%;
+     height: 4vh;
+}
+
+h2{
+     color: #FFFFFF;
+     letter-spacing: 4px;
+}
+
+.Register input{
+     margin: 2vh;
+     background-color: #FFFFFF;
+     color: #B22222;
+     font-size: 20px;
+     font-weight: bold;
+     text-align: center;
+     width: 20vw;
+}
+
+.Register button{
+     cursor: pointer;
+     text-align: center;
+     justify-content: center;
+     background-color: #000000;
+     border: 1px solid #B22222;
+     color: #FFFFFF;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-weight: bold;
+     border-radius: 10px;
+     height: 4vh;
+}
+
+.Register button:hover{
+     background-color: #B22222;
+}
