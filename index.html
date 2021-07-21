@@ -9,26 +9,26 @@
     <title>Motorola</title>
     <script>
         function handleSaveEmail() {
-            const emailValue = document.getElementById('emailField').value;
-            window.localStorage.setItem('emailField', value)
+            const inputEmail = document.
+                getElementById('email');
+            const email = inputEmail.value
+
+            localStorage.setItem('emailValue', email);
+            document.getElementById('emailValue');
+
+            if(email) {
+                alert(`Bem vindo ${email}, e-mail cadastrado com sucesso =)`);
+            }
+
         };
 
-        function handleGetEmail() {
-            const emailData = localStorage.getItem('emailField');
-            if(emailData){
-                document.getElementById('emailField').value = emailData
-                console.log(emailData)
-            }
-            
-        
-        };
     </script>
 </head>
 
 <body>
     <header class="header">
         <div class="MotorolaLogo">
-            <a href="https:/motorola.com.br" target="_blank">
+            <a href="https://www.motorola.com.br" target="_blank">
                 <img src="/Images/motorola-logo.png" alt="logo motorola-lenovo branco">
             </a>
         </div>
@@ -62,9 +62,9 @@
         </div>
 
         <div class="Register">
-            <h2>Cadastre-se</h2>
-            <input type="email" name="e-mail" id="emailField" value="" placeholder="E-mail" required>
-            <button type="submit" onclick="handleGetEmail()">Cadastre-se</button>
+            <h2>cadastre-se aqui</h2>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <button type="submit" onclick="handleSaveEmail()">Cadastre-se</button>
         </div>
 
     </main>

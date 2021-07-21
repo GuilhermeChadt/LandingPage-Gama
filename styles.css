@@ -8,13 +8,15 @@
      margin: 1vh;
 }
 
-.header{
+.header {
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
 }
-.MotorolaLogo{
-         animation: opacity 2s ease-in-out infinite;
-         opacity: 1;
+
+.MotorolaLogo {
+         animation: opacity 4s ease-in-out infinite;
+         opacity: 2;
       }
       
       @keyframes opacity {
@@ -29,86 +31,116 @@
           }
       }
 
-
-
-.ProductsCards{
+.ProductsCards {
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
+     flex: 50%;
 }
 
-.ProductsCards img{
+@media (max-width: 800px) {
+  .ProductsCards {
+    flex-direction: column;
+  }
+}
+
+.ProductsCards img {
     box-shadow: 5px 4px 10px red;
 }
 
-.ProductsCards img:hover{
+.ProductsCards img:hover {
      -webkit-transform: scale(1.3);
      -ms-transform: scale(1.3);
      transform: scale(1.2);
 }
 
-.ProductsCards2{
-     margin: 4vh;
+.ProductsCards2 {
+     margin: 4%;
      display: flex;
+     flex: 50%;
+     flex-wrap: wrap;
      justify-content: center;
 }
 
-.ProductsCards2 img{
+@media (max-width: 1000px) {
+  .ProductsCards2{
+    flex-direction: column;
+  }
+}
+
+.ProductsCards2 img {
      box-shadow: 5px 4px 10px red;   
 }
 
-.ProductsCards2 img:hover{
-     -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+.ProductsCards2 img:hover {
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.2);
 }
 
-.ChargerCard{
+.ChargerCard {
      display: flex;
-     margin-left: 0 auto;
+     flex-wrap: wrap;
+     flex: 50%;
      justify-content: center;
 }
 
-.ChargerCard img{
+@media (max-width: 800px) {
+  .ChargerCard {
+    flex-direction: column;
+  }
+}
+
+.ChargerCard img {
      box-shadow: 5px 4px 10px red;
 }
 
-.ChargerCard img:hover{
+.ChargerCard img:hover {
      -webkit-transform: scale(0.8);
      -ms-transform: scale(0.8);
      transform: scale(0.8);
 }
 
 .Register{
-     border-bottom: 1px solid #FFFFFF;
-     display: grid;
+     display: flex;
+     flex-direction: column;
      text-align: center;
      justify-content: center;
+     align-items: center;
      margin-left: auto;
      margin-right: auto;
+     margin-top: 10vh;
      margin-bottom: 20vh;
      width: 40%;
-     height: 4vh;
 }
 
-h2{
+h2 {
      color: #FFFFFF;
      letter-spacing: 4px;
 }
 
-.Register input{
+h2:hover {
+     color: #000000;
+
+}
+
+.Register input {
      margin: 2vh;
      background-color: #FFFFFF;
      color: #B22222;
      font-size: 20px;
      font-weight: bold;
      text-align: center;
-     width: 20vw;
+     border: 2px solid #B22222;
+     border-radius: 10px;
+     width: 40%;
+     height: 3vh;
 }
 
-.Register button{
+.Register button {
      cursor: pointer;
      text-align: center;
-     justify-content: center;
+     align-items: center;
      background-color: #000000;
      border: 1px solid #B22222;
      color: #FFFFFF;
@@ -116,9 +148,10 @@ h2{
      font-size: 16px;
      font-weight: bold;
      border-radius: 10px;
+     width: 18%;
      height: 4vh;
 }
 
-.Register button:hover{
+.Register button:hover {
      background-color: #B22222;
 }
